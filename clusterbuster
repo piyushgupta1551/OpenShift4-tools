@@ -142,7 +142,7 @@ declare -r controller_timestamp_file="/tmp/timing.json";
 declare -r run_uuid=$(uuidgen -r)
 
 declare kata_runtime_class=kata
-declare image_pull_policy=
+declare image_pull_policy=IfNotPresent
 declare container_image=quay.io/rkrawitz/bench-army-knife
 
 declare accumulateddata=
