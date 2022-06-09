@@ -36,7 +36,7 @@ function _create_containers_pausepod_yaml() {
 	cat <<EOF
 - name: ${namespace}-${instance}-$container
   imagePullPolicy: $image_pull_policy
-  image: "gcr.io/google_containers/pause-amd64:3.2"
+  image: "gcr.io/google-containers/pause-ppc64le:3.2"
 $(indent 2 container_standard_auxiliary_yaml)
 $(indent 2 volume_mounts_yaml "$namespace" "${instance}" "$secret_count")
 EOF
